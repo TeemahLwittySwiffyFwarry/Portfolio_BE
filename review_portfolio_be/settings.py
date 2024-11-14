@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'my_review',
     'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
