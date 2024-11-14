@@ -76,6 +76,8 @@ TEMPLATES = [
     },
 ]
 
+
+
 WSGI_APPLICATION = 'review_portfolio_be.wsgi.application'
 
 REST_FRAMEWORK = {
