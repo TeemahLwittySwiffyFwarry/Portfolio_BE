@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)*kqn0uuntr6@72@v63dxk2&o+b9hncs-4)!=vahtwe02ph1i(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["TeemahPortfolio.pythonanywhere.com"]
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'my_review',
     'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -76,6 +77,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'review_portfolio_be.wsgi.application'
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+    ]
+}
 
 
 # Database
